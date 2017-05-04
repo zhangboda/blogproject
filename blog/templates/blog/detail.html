@@ -1,0 +1,69 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load markdown_deux_tags %}
+{% block div %}
+
+<a href="#" class="fh5co-post-prev"><span><i class="icon-chevron-left"></i> Prev</span></a>
+<a href="#" class="fh5co-post-next"><span>Next <i class="icon-chevron-right"></i></span></a>
+
+	<article class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-12 col-xs-offset-0">
+			<figure class="animate-box">
+			<img src="{{ post.img_head }}" alt="Image" class="img-responsive">
+				
+			</figure>
+				<span class="fh5co-meta animate-box"><a href="#">{{ post.category.name }}</a></span>
+				<h2 class="fh5co-article-title animate-box"><a href="#">{{ post.title }}</a></h2>
+				<span class="fh5co-meta fh5co-date animate-box">{{ post.created_time }}</span>
+				
+				<div class="col-lg-12 col-lg-offset-0 col-md-12 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0 text-left content-article">
+					<div class="row">
+						<div class="col-lg-8 cp-r animate-box">
+							<p>{{ post.body}}<p>
+						</div>
+						<div class="col-lg-4 animate-box">
+							<div class="fh5co-highlight right">
+								<h4>Highlight</h4>
+								<p>{{ post.body4}}</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="row rp-b">
+						<div class="col-md-12 animate-box">
+							<blockquote>
+								<p>&ldquo;{{ post.body5}} &rdquo; <cite>&mdash; ZHANG BODA</cite></p>
+							</blockquote>
+						</div>
+					</div>
+
+					<div class="row rp-b">
+						<div class="col-lg-6 col-md-12 animate-box">
+							<figure>
+								<img src="{{ post.img1 }}" alt="Free HTML5 Bootstrap Template by FREEHTML5.co" class="img-responsive">
+							</figure>
+						</div>
+						<div class="col-lg-6 col-md-12 cp-l animate-box">
+							<p>{{ post.body2|safe}}</p>
+
+						</div>
+					</div>
+
+					<div class="row rp-b">
+						<div class="col-lg-6 col-lg-push-6 col-md-12 col-md-push-0 animate-box">
+							<figure>
+								<img src="{{ post.img2 }}" alt="Free HTML5 Bootstrap Template by FREEHTML5.co" class="img-responsive">
+							</figure>
+						</div>
+						<div class="col-lg-6 col-lg-pull-6 col-md-12 col-md-pull-0 cp-r animate-box">
+							<p>{{ post.body3|safe}}</p>
+
+						</div>
+					</div>
+				</div>
+                <!-- UY BEGIN -->
+                <div id="uyan_frame"></div>
+                <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2132050"></script>
+                <!-- UY END -->
+	</article>
+
+{% endblock div %}

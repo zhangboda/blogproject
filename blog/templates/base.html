@@ -1,0 +1,124 @@
+{% load blog_tags %}
+<!DOCTYPE html>
+
+<html class="no-js"> 
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>ZhangBoDa &mdash; Blog</title>
+    {% load staticfiles %}
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Free HTML5 Template by FREEHTML5" />
+    <meta name="keywords" content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive" />
+    
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link rel="shortcut icon" href="favicon.ico">
+    <!-- Google Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,700,400italic|Roboto:400,300,700' rel='stylesheet' type='text/css'>
+    <!-- Animate -->
+    <link rel="stylesheet" href="{% static 'blog/css/animate.css' %}">
+    <!-- Icomoon -->
+    <link rel="stylesheet" href="{% static 'blog/css/icomoon.css' %}">
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="{% static 'blog/css/bootstrap.css' %}">
+
+    <link rel="stylesheet" href="{% static 'blog/css/style.css' %}">
+
+    <!-- jQuery -->
+    <script src="{% static 'blog/js/jquery.min.js' %}"></script>
+    <!-- jQuery Easing -->
+    <script src="{% static 'blog/js/jquery.easing.1.3.js' %}"></script>
+    <!-- Bootstrap -->
+    <script src="{% static 'blog/js/bootstrap.min.js' %}"></script>
+    <!-- Waypoints -->
+    <script src="{% static 'blog/js/jquery.waypoints.min.js' %}"></script>
+    <!-- Main JS -->
+    <script src="{% static 'blog/js/main.js' %}"></script>
+    <!-- Modernizr JS -->
+    <script src="{% static 'blog/js/modernizr-2.6.2.min.js' %}"></script>
+
+    </head>
+    <body>
+    <div id="fh5co-offcanvas">
+        <a href="#" class="fh5co-close-offcanvas js-fh5co-close-offcanvas"><span><i class="icon-cross3"></i> <span>Close</span></span></a>
+        <div class="fh5co-bio">
+            <figure>
+                <img src="http://i1.piimg.com/567571/03917b84fd064d29.jpg" alt="Head portrait" class="img-responsive">
+            </figure>
+            <h3 class="heading">About Me</h3>
+            <h2>ZhangBoda</h2>
+            <p>No matter how bad your heart has been broken, the world doesn’t stop for your grief. The sun comes right back up the next day. </p>
+            <ul class="fh5co-social">
+                <li><a href="http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?"><i class="icon-qq"></i></a></li>
+                <li><a href="http://service.weibo.com/share/share.php?url="><i class="icon-sina-weibo"></i></a></li>
+                <li><a href="http://widget.renren.com/dialog/share?"><i class="icon-renren"></i></a></li>
+            </ul>
+        </div>
+
+        <div class="fh5co-menu">
+            <div class="fh5co-box">
+                <h3 class="heading">Categories</h3>
+                <ul>
+                    <li><a href="http://127.0.0.1:8000/">Home</a></li>
+                    <li><a href="http://jiantuku.com/#/uploads?scope=all">Photo</a></li>
+                    <li><a href="http://weibo.com/u/1678822017?topnav=1&wvr=6&topsug=1">Weibo</a></li>
+                    <li><a href="https://github.com/zhangboda">Git &amp; Hub </a></li>
+                    <li><a href="#">开发中</a></li>
+                </ul>
+            </div>
+            <div class="fh5co-box">
+                <h3 class="heading">Search</h3>
+                <form action="#">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="请输入">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- END #fh5co-offcanvas -->
+    <header id="fh5co-header">
+        
+        <div class="container-fluid">
+
+            <div class="row">
+                <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>
+                <ul class="fh5co-social">
+                    <li><a href="http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?"><i class="icon-qq"></i></a></li>
+                    <li><a href="http://service.weibo.com/share/share.php?url="><i class="icon-sina-weibo"></i></a></li>
+                    <li><a href="http://widget.renren.com/dialog/share?"><i class="icon-renren"></i></a></li>
+                </ul>
+                <div class="col-lg-12 col-md-12 text-center">
+                    <h1 id="fh5co-logo"><a href="http://127.0.0.1:8000/">Zhangboda <sup>blog</sup></a></h1>
+                </div>
+
+            </div>
+        
+        </div>
+
+    </header>
+    <div class="copyrights">Collect from <a href="#" >blog</a></div>
+    <!-- END #fh5co-header -->
+    
+    <div class="container-fluid">
+        <div class="row fh5co-post-entry">
+            {% block div %}
+                        
+            {% endblock div %}
+            <div class="clearfix visible-xs-block"></div>
+        </div>
+    </div>
+
+    <footer id="fh5co-footer">
+
+        <p><small>&copy; 2017. ZhangBoDa. <br> BLOG <a href="#" target="_blank" title="blog">index</a></small></p>
+
+            <audio style="width:300px; height:100px; margin:0 auto" autoplay=true loop hidden="true">
+                <source src="http://sc1.111ttt.com/2014/1/09/26/2262107321.mp3" />
+            </audio>
+
+    </footer>
+    </body>
+</html>
+
